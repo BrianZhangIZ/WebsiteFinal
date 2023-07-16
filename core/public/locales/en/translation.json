@@ -1,0 +1,16 @@
+{
+    "Main": {
+        "1": "EXPLORE THE GAMING DEVELOPMENT EXPERIENCE WITH US",
+        "button1": "View Courses",
+        "button2": "Contact Us"
+    },
+    "Navbar": {
+        "Home": "Home",
+        "Courses": "Courses",
+        "Team": "Team",
+        "Contacts": "Contacts",
+        "Groups": "Groups",
+        "Register": "Register",
+        "StudentRes": "Student Resources"
+    }
+}

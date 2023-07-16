@@ -1,6 +1,10 @@
 import { useNavigate } from "react-router-dom"
+import i18n from "../i18next"
+import { useTranslation } from "react-i18next"
+
 
 export default function Home(){
+    const { t } = useTranslation();
     const navigate = useNavigate()
     return (
         <div className="container">
@@ -14,15 +18,15 @@ export default function Home(){
                 <div className="col">
                     <div className="boxspace2"></div>
                     <div className="row">
-                        <h1>EXPLORE THE GAMING DEVELOPMENT EXPERIENCE WITH US</h1>
+                        <h1>{t("Main.1")}</h1>
                     </div>
                     <div className="boxspace2"></div>
                     <div className="row">
                         <div className="col">
-                            <button onClick={() => navigate('/Courses/')}> View Courses </button>
+                            <button onClick={() => navigate('/Courses/')}> {t("Main.button1")} </button>
                         </div>
                         <div className="col">
-                        <button onClick={() => navigate('/Contacts/')}> Contact Us </button>
+                        <button onClick={() => navigate('/Contacts/')}> {t("Main.button2")} </button>
                         </div>
                     </div>
                     

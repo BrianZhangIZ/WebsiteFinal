@@ -57,6 +57,9 @@ export default function StuResource() {
                 <br></br>
                 <br></br>
                 <p className="card-text">
+                  {item.text}
+                  <br></br>
+                  <br></br>
                   <a href={item.url} target="_blank" rel="noopener noreferrer">
                     <button>Learn More</button>
                   </a>

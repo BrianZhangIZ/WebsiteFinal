@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react"
 import { items } from "../items"
 import "../filterStyles.css"
+import { useTranslation } from "react-i18next"
 
 
 export default function Courses() {
+  const { t, i18n } = useTranslation();
   const [selectedFilters, setSelectedFilters] = useState([])
   const [filteredItems, setFilteredItems] = useState(items)
   //let filterList = ["Entry Courses", "Mid Courses", "Expert Courses"]
